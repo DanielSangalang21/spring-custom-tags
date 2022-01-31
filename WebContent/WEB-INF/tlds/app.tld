@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/webjsptaglibrary_2_0.xsd" version="2.0">
+<tlib-version>1.2</tlib-version>
+
+	<uri>SimpleTagAdvice</uri>
+	<tag>
+		<description>Some tag that gives advice</description>
+		<name>advice</name>
+		<tag-class>com.example.tag.AdviseTag</tag-class>
+		<body-content>scriptless</body-content>
+		
+		<attribute>
+			<name>choice</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<description>Some tag that gives choices</description>
+		<name>choices</name>
+		<tag-class>com.example.tag.ChoicesTag</tag-class>
+		<body-content>scriptless</body-content>
+	</tag>
+</taglib>
